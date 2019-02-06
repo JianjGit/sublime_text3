@@ -1,0 +1,21 @@
+打开安装路径，然后新建文本，写入
+
+
+sublime_addright.reg
+
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\*\shell\SublimeText3]
+@="用 SublimeText3 打开"
+"Icon"="D:\\Sublime Text 3\\sublime_text.exe,0"
+[HKEY_CLASSES_ROOT\*\shell\SublimeText3\command]
+@="D:\\Sublime Text 3\\sublime_text.exe %1"
+[HKEY_CLASSES_ROOT\Directory\shell\SublimeText3]
+@="用 SublimeText3 打开"
+"Icon"="D:\\Sublime Text 3\\sublime_text.exe,0"
+[HKEY_CLASSES_ROOT\Directory\shell\SublimeText3\command]
+@="D:\\Sublime Text 3\\sublime_text.exe %1"
+
+这里
+D:\\Sublime Text 3\\sublime_text.exe
+是可执行文件的路径
+然后将文件保存为sublime_addright.reg ，之后打开运行，即可。
