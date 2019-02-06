@@ -1,15 +1,26 @@
+1 基础
+Package Control
+
+2 主题
 Agila Theme
-Alignment
-BracketHighlighter
+Theme-Aprosopo
+
+3 外观增强
+Transparency 透明度
+SideBarEnhancements 侧边栏增强
+
+4 操作/功能增强
+Alignment 对齐
+BracketHighlighter 括号对应
+SublimeCodeIntel 代码提示
+SublimeLinter
+
+5 HTML/CSS/JS
 Color Highlighter
 CSS Format
 Emmet
 JsFormt
-Package Control
-PyV8
-SideBarEnhancements
-SublimeCodeIntel
-SublimeLinter
-Theme-Aprosopo
-Transparency
 Vue  Syntax Highlight
+
+
+PyV8
