@@ -1,0 +1,28 @@
+1 复制代码，粘贴到
+import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+
+另一种代码：
+import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.
+request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').
+write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+
+
+2 如果报错
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "./python3.3/urllib/request.py", line 156, in urlopen
+  File "./python3.3/urllib/request.py", line 469, in open
+  File "./python3.3/urllib/request.py", line 487, in _open
+  File "./python3.3/urllib/request.py", line 447, in _call_chain
+  File "./python3.3/urllib/request.py", line 1274, in http_open
+  File "./python3.3/urllib/request.py", line 1251, in do_open
+urllib.error.URLError: <urlopen error [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。>
+
+
+则从 https://github.com/wbond/package_control 下载 zip 文件，然后解压到 C:\Users\Administrator\AppData\Roaming\Sublime Text 3\Packages 中，改名为 Package Control
+参考来源：https://www.jb51.net/softjc/139057.html
+
+3 packagecontrol.io 拒绝了我们的连接请求
+https://blog.csdn.net/u011127019/article/details/53141897
