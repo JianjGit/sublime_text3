@@ -1,0 +1,4 @@
+2020-02-17 
+存储配置文件在 Packages/User/sftp_servers 文件夹内，文件名用于在服务器列表中显示，所以文件名中不能包含空格。
+配置完成之后，我们保存，然后输入一个名字作为标识。
+来自：https://www.jianshu.com/p/0d36cbdecea8
