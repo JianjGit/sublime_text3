@@ -22,3 +22,24 @@
 	"word_wrap": true,
 	"default_encoding": "UTF-8",
 }
+
+# settings written in 2021-10-27
+{
+	"color_scheme": "Monokai.sublime-color-scheme",
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Agila Classic.sublime-theme",
+	"bold_folder_labels": true,
+	"default_line_ending": "unix",
+	"dictionary": "Packages/Language - English/en_US.dic",
+	"fade_fold_buttons": false,
+	"font_size": 12,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"word_wrap": true,
+	"default_encoding": "UTF-8",
+}
